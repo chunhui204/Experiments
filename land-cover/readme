@@ -1,0 +1,29 @@
+1. bands
+
+Band 2 - Blue;
+Band 3 - Green;
+Band 4 - Red;
+Band 5 - Vegetation Red Edge;
+Band 6 - Vegetation Red Edge;
+Band 7 - Vegetation Red Edge;
+Band 8 - NIR;
+Band 8A - Vegetation Red Edge;
+Band 11 - SWIR;
+Band 12 - SWIR;
+
+2. 植被指数：
+
+比值植被指数(RVI:Ratio Vegetation Index) 
+RVI=NIR/R
+
+归一化植被指数(NDVI:Normalized Difference Vegetation Index) 
+NDVI = (NIR-R)/(NIR+R)
+
+差值植被指数(DVI:Difference Vegetation Index) 
+DVI=NIR-R
+--------------------- 
+
+3. Normalized Difference Water Index
+
+NDWI = (NIR-SWIR)/(NIR + SWIR)
+
