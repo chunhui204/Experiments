@@ -1,1 +1,9 @@
+1. fastai选手，没有使用multi-pixel model融合而是在低分辨率模型基础上finetune，配合完美的lr调参，但模型（带TTA）竟然达到0.930，相比下我多个模型（但模型只有0.925）
+达到0.929，还是觉得模型融合更robust。
 
+2. 使用optimal threshold，看样子能提升0.02（我用的时候好像没有提升）
+
+3. 5折交叉验证（trn:val=9:1 not 4:1），注意他增加模型差异化的方式：
+    通过前两个模型和后三个模型用不同的tfms。交叉验证是她提高了0.02左右，相比于我的交叉验证，没有提升。
+    
+我觉得流程应该是调出best sigle models --> mix models ---> multi-models k-flold
